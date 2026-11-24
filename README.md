@@ -4,6 +4,54 @@ Monthly air traffic in India by airport, State, airline and route, from the Airp
 
 **September 2026:** Indian airports handled 3.01 crore passenger arrivals and departures (AAI). Indian airlines flew 118.23 lakh domestic passengers, IndiGo 65.4% of them (DGCA).
 
+## At a glance
+
+| Table | Rows | Period | Where |
+| --- | ---: | --- | --- |
+| airports | 150 |  | `data/airports.csv` |
+| cities | 2 |  | `data/cities.csv` |
+| airport-names | 380 |  | `data/airport-names.csv` |
+| airlines | 161 |  | `data/airlines.csv` |
+| airline-names | 244 |  | `data/airline-names.csv` |
+| aai-airport-traffic-monthly | 16,105 | 2014-01 to 2026-09 | `data/aai/airport-traffic-monthly.csv` |
+| aai-state-traffic-monthly | 2,030 | 2024-05 to 2026-09 | `data/aai/state-traffic-monthly.csv` |
+| aai-category-monthly | 10,325 | 2014-01 to 2026-09 | `data/aai/category-monthly.csv` |
+| aai-region-monthly | 8,046 | 2014-01 to 2026-09 | `data/aai/region-monthly.csv` |
+| aai-printed-lines-monthly | 3,338 | 2014-01 to 2026-09 | `data/aai/printed-lines-monthly.csv` |
+| aai-revisions | 2,004 | 2014-01 to 2025-09 | `data/aai/revisions.csv` |
+| aai-annual-check | 12 | 2014-15 to 2025-26 | `data/aai/annual-check.csv` |
+| dgca-report-card | 37,523 |  | `data/dgca/report-card.csv` |
+| dgca-report-card-revisions | 3,997 |  | `data/dgca/report-card-revisions.csv` |
+| dgca-report-issues | 147 |  | `data/dgca/report-issues.csv` |
+| dgca-operating-stats | 5,646 | 2009-01 to 2026-10 | `data/dgca/operating-stats.csv` |
+| dgca-routes-domestic | 69,467 | 2015-04 to 2026-10 | `data/dgca/routes-domestic.csv` |
+| dgca-routes-international-airlines | 3,708 |  | `data/dgca/routes-international-airlines.csv` |
+| dgca-routes-international-airlines-monthly | 11,154 | 2015-01 to 2026-06 | `data/dgca/routes-international-airlines-monthly.csv` |
+| dgca-routes-international-countries | 2,544 |  | `data/dgca/routes-international-countries.csv` |
+| dgca-routes-international-city-pairs | 16,142 |  | `data/dgca/routes-international-city-pairs.csv` |
+| airport-operators | 53 |  | `data/airports/operators.csv` |
+| ppp-events | 34 | 1999-06-10 to 2026-08-17 | `data/airports/ppp-events.csv` |
+| ppp-bids | 31 |  | `data/airports/ppp-bids.csv` |
+| ministry-values | 4,139 |  | `data/ministry/values.csv` |
+| ministry-tables | 26 |  | `data/ministry/tables.csv` |
+| parliament-values | 2,577 |  | `data/parliament/values.csv` |
+| parliament-sources | 49 |  | `data/parliament/sources.csv` |
+| aaib-reports | 251 |  | `data/aaib/reports.csv` |
+| dgca-fleet-aircraft | 1,302 |  | `data/dgca/fleet-aircraft.csv` |
+| dgca-register-events | 3,544 | 2009-10-01 to 2026-10-30 | `data/dgca/register-events.csv` |
+| dgca-fleet-owners | 831 |  | `data/dgca/fleet-owners.csv` |
+| dgca-fleet-operators | 154 |  | `data/dgca/fleet-operators.csv` |
+| dgca-flight-schools | 42 |  | `data/dgca/flight-schools.csv` |
+| gaps | 478 |  | `data/gaps.csv` |
+| notes | 4,212 |  | `data/notes.csv` |
+| sources | 1,523 |  | `data/sources.csv` |
+
+## Spreadsheet-friendly files
+
+The same data, one row per item and one column per period, for spreadsheets.
+
+- `data/wide/airport_passengers.csv`: Passengers at each airport, one column per month (AAI)
+
 ## Quick start
 
 ```python
@@ -89,6 +137,20 @@ Later releases can revise earlier months. The AAI files keep each month's own re
 - A blank cell means the source printed nothing. Nothing is estimated or zero-filled. Missing months are listed in `gaps.csv`.
 - Figures that contradict each other on the same page are kept as printed and listed in `notes.csv`.
 - Report card passengers are in lakh, as DGCA prints them. Freight and mail are in tonnes. Decimals are rounded to 12 significant digits to drop floating-point noise.
+
+## How to cite
+
+Know More India, *Aviation data*, version 2026-11-19, https://github.com/knowmoreindia/aviation-data. Licensed CC BY 4.0.
+
+```bibtex
+@misc{knowmoreindia_aviation_data,
+  author = {{Know More India}},
+  title = {Aviation data},
+  year = {2026},
+  version = {2026-11-19},
+  howpublished = {\url{https://github.com/knowmoreindia/aviation-data}}
+}
+```
 
 ## Licence
 
